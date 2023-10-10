@@ -50,6 +50,24 @@ public class Main extends Thread{
                a1.start();
                 a2.start();
                 break;
+            case 6:
+                Main t11=new Main();
+                t11.start();
+                t11.start();
+                break;
+            case 7:
+                try{
+                    for(int i=1;i<=5;i++)
+                    {
+                        Thread.sleep(-400);
+                        System.out.println(i+" ");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.out.println(ex);
+                }
+                break;
         }
     }
 }
